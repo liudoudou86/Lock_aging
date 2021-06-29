@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     logger.add('log_{}.txt'.format(cur_time), rotation="100 MB") # 将日志输出到txt文本中
     count = 0
-    for i in range (0, 1000): # 对函数做循环
+    for i in range (0, 10): # 对函数做循环
         lock()
         time.sleep(3) # 3秒缓冲
         count += 1
